@@ -1,8 +1,8 @@
 # Tarea-Arquitectura
 
-Para ejecutar correr:
+Para ejecutar:
 
-```
+```bash
 docker-compose up --build
 ```
 
