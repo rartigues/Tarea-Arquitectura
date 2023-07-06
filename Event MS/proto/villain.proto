@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto"; 
+
+service VillainService {
+  rpc AddVillain (VillainRequest) returns (VillainResponse) {}
+}
+
+message VillainRequest {
+    string nombre_villano = 1;
+    google.protobuf.Timestamp fecha_ingreso = 2;
+} 
+
+message VillainResponse {
+  string message = 1;
+}
