@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Villain(models.Model):
     nombre      = models.CharField(
         max_length=255, 
@@ -34,3 +35,6 @@ class  Power(models.Model):
 
     def __str__(self):
         return self.nombre
+
+
+from gRPCClient.signals import enviar_protobuf
