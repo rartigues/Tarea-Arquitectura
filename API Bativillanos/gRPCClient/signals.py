@@ -11,7 +11,7 @@ from google.protobuf.timestamp_pb2 import Timestamp
 def enviar_protobuf(sender, instance, created, **kwargs):
     if created:
 
-        channel = grpc.insecure_channel('localhost:50051')
+        channel = grpc.insecure_channel('eventms:50051')
         client = villain_pb2_grpc.VillainServiceStub(channel)
 
         now = datetime.datetime.now()
